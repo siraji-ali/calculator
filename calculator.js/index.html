@@ -1,0 +1,61 @@
+   
+<!DOCTYPE html>
+<html>
+  <head>
+   <!-- the title  -->  
+    <title>Calculator</title>
+    <!-- the CSS link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- this is the class called calculator which holds the different button of the calculator -->
+    <div class="calculator">
+      <!-- this is where u will see your input and get your output -->
+      <input type="text" id="result" disabled />
+      <!-- this <br> tag breaks to the next row -->
+      <br />
+      <!-- these are the buttons found in the second row  -->
+      <input type="button" value="1" onclick="addToResult(1)" />
+      <input type="button" value="2" onclick="addToResult(2)" />
+      <input type="button" value="3" onclick="addToResult(3)" />
+      <!-- this represents division -->
+      <input type="button" value="/" onclick="addToResult('/')" />
+
+      <br />
+      <!-- these are the buttons found in the third row  -->
+      <input type="button" value="4" onclick="addToResult(4)" />
+      <input type="button" value="5" onclick="addToResult(5)" />
+      <input type="button" value="6" onclick="addToResult(6)" />
+      <!-- this represents multiplication -->
+      <input type="button" value="*" onclick="addToResult('*')" />
+
+      <br />
+      <!-- these are the buttons found in the fourth row  -->
+
+      <input type="button" value="7" onclick="addToResult(7)" />
+      <input type="button" value="8" onclick="addToResult(8)" />
+      <input type="button" value="9" onclick="addToResult(9)" />
+      <!-- this represents subtraction -->
+      <input type="button" value="-" onclick="addToResult('-')" />
+
+      <br />
+      <!-- these are the buttons found in the last row  -->
+      <input type="button" value="0" onclick="addToResult(0)" />
+
+      <!-- this button clears your input or output  -->
+            <input type = "button" value="%" onclick= "addToResult('%')">
+      <input type="button" value="=" onclick="calculate()" />
+      <!-- this represents addition -->
+      <input type="button" value="+" onclick="addToResult('+')" />
+            <!-- this button gives you the output according to the input you gave -->
+
+      <input type="button" value="C" onclick="clearResult()" />
+
+      <br />
+
+      
+    </div>
+    <!-- this is the JS code -->
+    <script src="./script.js"></script>
+    
+</html> 
